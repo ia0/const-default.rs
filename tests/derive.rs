@@ -170,6 +170,7 @@ fn struct_of_cell_types_works() {
         field_1: Cell<i32>,
         field_2: RefCell<i32>,
     }
+    assert_eq!(<TestStruct as ConstDefault>::DEFAULT, TestStruct::default());
 }
 
 #[test]
